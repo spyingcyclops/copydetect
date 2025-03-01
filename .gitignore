@@ -8,4 +8,7 @@ copydetect.egg-info/
 
 docs/_build
 
+venv/
+.venv/
 .cache
+.aider*
