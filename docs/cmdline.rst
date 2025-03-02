@@ -14,11 +14,24 @@ Test files for similarity in one directory against files in another directory:
 Test files in multiple directories for similarity:
   ``copydetect -t DIRECTORY1 DIRECTORY2 DIRECTORY3``
 
+Advanced Usage
+==============
 Specify which file types to test for similarity:
   ``copydetect -t DIRECTORY -e py java c``
+  This will only test files with the extensions .py, .java, and .c.
 
 Exclude boilerplate lines from test for similarity.
   ``copydetect -t DIRECTORY -b BOILERPLATE``
+  This will exclude any lines that match the boilerplate code from the similarity detection.
+
+Configure the sensitivity of the similarity detection:
+  ``copydetect -t DIRECTORY -n 20 -g 30``
+  This will set the noise threshold to 20 characters, for minimum similarity detection, and the guarantee threshold to 30 characters for guaranteed similarity detection.
+
+Generate a report with a custom name and styling:
+  ``copydetect -t DIRECTORY -O custom_report.html -css /static/custom.css``
+  This will save the report as custom_report.html and use custom.css for styling.
+
 
 Options
 =======
