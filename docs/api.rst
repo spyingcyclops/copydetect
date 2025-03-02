@@ -1,5 +1,5 @@
 API
-======================================
+###
 
 Copydetect can also be run via the python API. An example of basic usage is provided below.
 
@@ -49,14 +49,14 @@ For advanced use cases, the API contains a ``CodeFingerprint`` class for perform
         >>h = [hash(s[o:o+k]) for o in range(len(s)-k+1)]
         return np.array(h)<<
 
-========
+
 Detector
 ========
 
 .. automodule:: copydetect.detector
    :members:
 
-=====
+
 Utils
 =====
 
